@@ -95,7 +95,6 @@ public class Starter implements Directions{
     rob.move();
     rob.move();
     rob.move();
-
     rob.move();
     rob.turnLeft();
     rob.turnLeft();
