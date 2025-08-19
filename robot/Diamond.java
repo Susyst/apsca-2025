@@ -21,7 +21,7 @@ public class Diamond implements Directions{
         // examples of commands you can invoke on a Robot
         rob.move();// move one step in the direction it is facing
 
-        World.setDelay(1);
+        World.setDelay(15);
         // starting the letter R
         rob.putBeeper();
         rob.move();
