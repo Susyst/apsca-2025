@@ -21,122 +21,30 @@ public class Diamond implements Directions{
         // examples of commands you can invoke on a Robot
         rob.move();// move one step in the direction it is facing
 
-        World.setDelay(15);
+        World.setDelay(5);
         // starting the letter R
         rob.putBeeper();
         rob.move();
         rob.turnLeft();
         rob.move();
-        rob.putBeeper();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.move();
-        rob.turnLeft();
-        rob.move();
-        rob.putBeeper();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.move();
-        rob.turnLeft();
-        rob.move();
-        rob.putBeeper();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.move();
-        rob.turnLeft();
-        rob.move();
+    for (int j = 0; j <= 3; j++) {
+        for (int i = 0; i <= 2; i++) {
+            rob.putBeeper();
+            rob.turnLeft();
+            rob.turnLeft();
+            rob.turnLeft();
+            rob.move();
+            rob.turnLeft();
+            rob.move();
+        }
         rob.putBeeper();
         rob.turnLeft();
         rob.turnLeft();
         rob.move();
         rob.turnLeft();
         rob.move();
-        rob.putBeeper();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.move();
-        rob.turnLeft();
-        rob.move();
-        rob.putBeeper();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.move();
-        rob.turnLeft();
-        rob.move();
-        rob.putBeeper();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.move();
-        rob.turnLeft();
-        rob.move();
-        rob.putBeeper();
-        rob.putBeeper();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.putBeeper();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.move();
-        rob.turnLeft();
-        rob.move();
-        rob.putBeeper();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.move();
-        rob.turnLeft();
-        rob.move();
-        rob.putBeeper();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.move();
-        rob.turnLeft();
-        rob.move();
-        rob.putBeeper();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.move();
-        rob.turnLeft();
-        rob.move();
-        rob.putBeeper();
-        rob.putBeeper();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.move();
-        rob.turnLeft();
-        rob.move();
-        rob.putBeeper();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.move();
-        rob.turnLeft();
-        rob.move();
-        rob.putBeeper();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.move();
-        rob.turnLeft();
-        rob.move();
-        rob.putBeeper();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.turnLeft();
-        rob.move();
-        rob.turnLeft();
-        rob.move();
-        rob.putBeeper();
+    }
+        
         
 
 
