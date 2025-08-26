@@ -35,9 +35,9 @@ class Math {
     //For now we are just going to work with primitive
 
     //Create 3 variables of each of the above types (USE GOOD CODING PRACTICE WHEN CREATING THE VARIABLES
-
-
-
+int drivingAge = 16;
+double storedMoney = 219.43d;
+boolean haveDriverLicense = false;
 
 
     //MATH TIME!
@@ -46,7 +46,10 @@ class Math {
     //+ - * / %
 
     //Try doing some math operations with numbers. How can we check to see if the math worked?
-
+int y = 5;
+int x = y - 5;
+System.out.print(int(x));
+        
     //Create codes that will print the following:
 
     //Odd integers from 1 to 100, inclusive of both
