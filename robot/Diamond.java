@@ -20,7 +20,6 @@ public class Diamond implements Directions{
         //Robot dude = new Robot(7,5,West,9);
         // examples of commands you can invoke on a Robot
         rob.move();// move one step in the direction it is facing
-
         World.setDelay(5);
         // starting the letter R
         rob.putBeeper();
