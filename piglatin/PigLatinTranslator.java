@@ -34,7 +34,11 @@ public class PigLatinTranslator {
         // TODO: Replace this code to correctly translate a single word.
         // Start here first!
         // This is the first place to work.
-        result = input; // delete this line
+        
+        Scanner scan = new Scanner(System.in);
+        String word = scan.nextLine();
+        System.out.println(word + " in Pig Latin is " + pigLatin(word) );
+        scan.close();
 
         return result;
     }
