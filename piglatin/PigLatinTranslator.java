@@ -39,7 +39,7 @@ public class PigLatinTranslator {
         String word = scan.nextLine();
         System.out.println(word + " in Pig Latin is " + pigLatin(word) );
         scan.close();
-
+        word = word.s
         return result;
     }
 
