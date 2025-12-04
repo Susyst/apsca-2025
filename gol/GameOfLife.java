@@ -1,6 +1,6 @@
 package gol;
 
-import java.util.Arrays;
+import java.util.Arrays; 
 
 public class GameOfLife implements Board {
 
