@@ -1,6 +1,6 @@
 package gol;
 
-interface Board {
+interface Board { 
 
     // Run the simulation for a given number of turns
     public void run(int turns);
