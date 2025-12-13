@@ -10,6 +10,7 @@ public class GameOfLife implements Board {
     public GameOfLife(int x, int y)
     {
         // Construct a 2d array of the given x and y size.
+        board = new int[x][y];
     }
 
     // Set values on the board
@@ -24,6 +25,9 @@ public class GameOfLife implements Board {
     // Run the simulation for a number of turns
     public void run(int turns) {
         // call step the number of times requested
+        for (int t = 0; t < turns; t++) {
+            step();
+        }
     }
 
     // Step the simulation forward one turn.
@@ -31,6 +35,29 @@ public class GameOfLife implements Board {
     {
         print();
         // Update the game board, store a 1 if the cell is alive and a 0 otherwise.
+        int[][] newBoard = new int[board.length][board[0].length];
+        for (int x = 0; x < board.length; x++) {
+            for (int y = 0; y < board[0].length; y++) {
+                int neighbors = countNeighbors(x, y);
+                int currentCell = board[x][y];
+                if (currentCell == 1) {
+                    // Any live cell with two or three live neighbours survives.
+                    if (neighbors == 2 || neighbors == 3) {
+                        newBoard[x][y] = 1;
+                    } else {
+                        newBoard[x][y] = 0;
+                    }   
+                } else {
+                    // Any dead cell with exactly three live neighbours becomes a live cell.
+                    if (neighbors == 3) {
+                        newBoard[x][y] = 1;
+                    } else {
+                        newBoard[x][y] = 0;
+                    }
+                }
+            }
+        }
+        board = newBoard;
     }
 
 
@@ -38,6 +65,14 @@ public class GameOfLife implements Board {
         int count = 0;
         // count the number of neighbors the cell has
         // use the get(x,y) method to read any board state you need.
+        for (int dx = -1; dx <= 1; dx++) {
+            for (int dy = -1; dy <= 1; dy++) {
+                if (dx == 0 && dy == 0) {
+                    continue; // Skip the cell itself
+                }
+                count += get(x + dx, y + dy);
+            }
+        }
         return count;
     }
 
