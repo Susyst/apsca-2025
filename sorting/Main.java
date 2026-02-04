@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args)
     {
         // Generate a random array of any size you want.
-        int[] testInput = randomArray(20);   // example: 20 random numbers
+        int[] testInput = randomArray(100);   // example: 100 random numbers
 
         // Increase loops once everything works.
         TestSuite.run(testInput, 10000);
