@@ -55,7 +55,7 @@ public class IrregularPolygon {
             //myDrawingTool.move(50, 50);
             if (myPolygon.size() < 2) {
                 return;
-            }
+            } 
             DrawingTool myDrawingTool = new DrawingTool(new SketchPad(500, 500));
             Point2D.Double first = myPolygon.get(0);
             myDrawingTool.up();
