@@ -49,8 +49,17 @@ public class TowerModel {
     public void move(int source, int destination)
     {
         System.out.println("Move #" + ++moveCounter + " from " + source + " to " + destination);
-        // TODO!! make the method move
+        int topSource = towers[source].peek();
+        int topDestination = towers[destination].peek();
+        if (topSource == 0)
+        {
+            return; // No disk to move
+        }
+        if (topDestination != 0 && topSource > topDestination)
+        {return;} // Illegal move
         towers[destination].push(towers[source].pop());
+
+
         
     }
 
